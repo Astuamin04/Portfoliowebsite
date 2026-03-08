@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Astu Ankurkumar Amin — Full Stack Developer & IT Support Specialist based in Barrie, Ontario. Java, Python, Spring Boot, Microsoft 365, Active Directory." />
-  <meta name="keywords" content="Astu Amin, Full Stack Developer, IT Support Specialist, Java Developer, Python, Spring Boot, Barrie Ontario, Programmer Analyst" />
+  <meta name="description" content="Astu Ankurkumar Amin — Full Stack Developer & IT Support Specialist based in Barrie, Ontario." />
+  <meta name="keywords" content="Astu Amin, Full Stack Developer, IT Support Specialist, Java, Python, Spring Boot, Barrie Ontario" />
   <meta property="og:title" content="Astu Ankurkumar Amin — Full Stack Dev & IT Specialist" />
-  <meta property="og:description" content="2+ years of hands-on experience in software development and IT operations. Open to new opportunities." />
+  <meta property="og:description" content="2+ years of hands-on experience in software development and IT operations." />
   <meta property="og:type" content="website" />
   <title>Astu Ankurkumar Amin — IT Support & Full Stack Developer</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-
-  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- AMBIENT GLOW BLOBS -->
   <div class="ambient ambient-1"></div>
   <div class="ambient ambient-2"></div>
+  <div class="ambient ambient-3"></div>
 
-  <!-- ===================== NAV ===================== -->
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span class="theme-icon sun">☀️</span>
+    <span class="theme-icon moon">🌙</span>
+  </button>
+
+  <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">AAA</a>
     <ul class="nav-links">
@@ -32,38 +34,39 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact" class="nav-cta">Hire Me</a></li>
     </ul>
-    <!-- Mobile hamburger -->
     <div class="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
   <div class="mobile-menu">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
     <a href="#education">Education</a>
     <a href="#contact">Hire Me →</a>
   </div>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-left">
         <div class="hero-badge"><div class="badge-dot"></div> Open to New Opportunities</div>
         <h1>Full Stack Dev<br>& <span>IT Specialist</span></h1>
-        <p class="hero-sub">Building robust applications and keeping systems running — I bridge the gap between development and IT operations with 2+ years of hands-on experience.</p>
+        <p class="hero-sub" data-text="Building robust applications and keeping systems running — I bridge the gap between development and IT operations with 2+ years of hands-on experience.">Building robust applications and keeping systems running — I bridge the gap between development and IT operations with 2+ years of hands-on experience.</p>
         <div class="hero-tags">
           <span class="tag">Java & Spring Boot</span>
           <span class="tag">Python & Flask</span>
           <span class="tag">IT Support Tier 1 & 2</span>
           <span class="tag">SQL & REST APIs</span>
           <span class="tag">Microsoft 365</span>
+          <span class="tag">Active Directory</span>
         </div>
         <div class="hero-ctas">
           <a href="mailto:astuamin04@gmail.com" class="btn-primary">
@@ -73,6 +76,17 @@
           <a href="#projects" class="btn-secondary">
             View My Work
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+          <a href="https://github.com/astu-amin" target="_blank" rel="noopener" class="social-btn github">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/astu-amin" target="_blank" rel="noopener" class="social-btn linkedin">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
           </a>
         </div>
       </div>
@@ -124,10 +138,10 @@
 
   <hr class="divider" />
 
-  <!-- ===================== ABOUT ===================== -->
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <div class="section-label">Who I Am</div>
+      <div class="section-label" data-text="Who I Am">Who I Am</div>
       <div class="about-grid reveal">
         <div class="about-text">
           <div class="section-title">The Dev Who Keeps<br>Things Running</div>
@@ -138,31 +152,19 @@
         <div class="value-list">
           <div class="value-item">
             <div class="value-icon">⚡</div>
-            <div>
-              <h4>Fast Learner</h4>
-              <p>Picked up Android development, REST APIs, and full-stack frameworks during academic projects without prior exposure.</p>
-            </div>
+            <div><h4>Fast Learner</h4><p>Picked up Android development, REST APIs, and full-stack frameworks during academic projects without prior exposure.</p></div>
           </div>
           <div class="value-item">
             <div class="value-icon">🔧</div>
-            <div>
-              <h4>Full-Spectrum Technical Range</h4>
-              <p>From writing Python automation scripts to configuring VPN and managing Microsoft 365 — few candidates bridge both worlds.</p>
-            </div>
+            <div><h4>Full-Spectrum Technical Range</h4><p>From Python automation to VPN configuration and Microsoft 365 — few candidates bridge both worlds.</p></div>
           </div>
           <div class="value-item">
             <div class="value-icon">📚</div>
-            <div>
-              <h4>Documentation-First Mindset</h4>
-              <p>I create clear user guides and knowledge bases that reduce repeat tickets and train teams effectively.</p>
-            </div>
+            <div><h4>Documentation-First Mindset</h4><p>I create clear user guides and knowledge bases that reduce repeat tickets and train teams effectively.</p></div>
           </div>
           <div class="value-item">
             <div class="value-icon">🌍</div>
-            <div>
-              <h4>International & Adaptable</h4>
-              <p>Relocated from India and thrived in a Canadian academic and professional environment — I adapt fast.</p>
-            </div>
+            <div><h4>International & Adaptable</h4><p>Relocated from India and thrived in a Canadian academic and professional environment — I adapt fast.</p></div>
           </div>
         </div>
       </div>
@@ -171,10 +173,10 @@
 
   <hr class="divider" />
 
-  <!-- ===================== SKILLS ===================== -->
+  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
-      <div class="section-label">What I Bring</div>
+      <div class="section-label" data-text="What I Bring">What I Bring</div>
       <div class="section-title reveal">Technical Skill Set</div>
       <p class="section-sub reveal">Hands-on experience across the full software development lifecycle and IT operations stack.</p>
       <div class="skills-grid">
@@ -182,86 +184,51 @@
           <div class="skill-icon">💻</div>
           <h3>Languages & Frameworks</h3>
           <div class="skill-pills">
-            <span class="pill accent">Java</span>
-            <span class="pill accent">Python</span>
-            <span class="pill accent">JavaScript</span>
-            <span class="pill">Spring Boot</span>
-            <span class="pill">Spring Framework</span>
-            <span class="pill">Flask</span>
-            <span class="pill">HTML & CSS</span>
-            <span class="pill">REST APIs</span>
-            <span class="pill">JSON</span>
+            <span class="pill accent">Java</span><span class="pill accent">Python</span><span class="pill accent">JavaScript</span>
+            <span class="pill">Spring Boot</span><span class="pill">Spring Framework</span><span class="pill">Flask</span>
+            <span class="pill">HTML & CSS</span><span class="pill">REST APIs</span><span class="pill">JSON</span>
           </div>
         </div>
         <div class="skill-card it reveal">
           <div class="skill-icon">🖥️</div>
           <h3>IT Support & Systems</h3>
           <div class="skill-pills">
-            <span class="pill accent">Active Directory</span>
-            <span class="pill accent">Microsoft 365</span>
-            <span class="pill">Windows Admin</span>
-            <span class="pill">macOS Config</span>
-            <span class="pill">LAN / VPN</span>
-            <span class="pill">Tier 1 & 2 Support</span>
-            <span class="pill">System Deployment</span>
-            <span class="pill">Documentation</span>
+            <span class="pill accent">Active Directory</span><span class="pill accent">Microsoft 365</span>
+            <span class="pill">Windows Admin</span><span class="pill">macOS Config</span>
+            <span class="pill">LAN / VPN</span><span class="pill">Tier 1 & 2 Support</span>
+            <span class="pill">System Deployment</span><span class="pill">Documentation</span>
           </div>
         </div>
         <div class="skill-card tools reveal">
           <div class="skill-icon">🛠️</div>
           <h3>Databases & Tools</h3>
           <div class="skill-pills">
-            <span class="pill accent">MySQL</span>
-            <span class="pill accent">SQL Server</span>
-            <span class="pill">Git / GitHub</span>
-            <span class="pill">Postman</span>
-            <span class="pill">IntelliJ IDEA</span>
-            <span class="pill">VS Code</span>
-            <span class="pill">Eclipse</span>
-            <span class="pill">PyCharm</span>
+            <span class="pill accent">MySQL</span><span class="pill accent">SQL Server</span>
+            <span class="pill">Git / GitHub</span><span class="pill">Postman</span>
+            <span class="pill">IntelliJ IDEA</span><span class="pill">VS Code</span>
+            <span class="pill">Eclipse</span><span class="pill">PyCharm</span>
           </div>
         </div>
       </div>
       <div class="soft-grid reveal">
-        <div class="soft-item">
-          <div class="icon">🧩</div>
-          <h4>Problem Solving</h4>
-          <p>Analytical approach to both code bugs and IT incidents</p>
-        </div>
-        <div class="soft-item">
-          <div class="icon">🤝</div>
-          <h4>Team Collaboration</h4>
-          <p>Cross-functional teamwork in fast-paced environments</p>
-        </div>
-        <div class="soft-item">
-          <div class="icon">💬</div>
-          <h4>Communication</h4>
-          <p>Translating technical issues for non-technical users</p>
-        </div>
-        <div class="soft-item">
-          <div class="icon">⏱️</div>
-          <h4>Time Management</h4>
-          <p>98% on-time performance maintained under pressure</p>
-        </div>
-        <div class="soft-item">
-          <div class="icon">🔄</div>
-          <h4>Adaptability</h4>
-          <p>Quickly pivots across technical environments</p>
-        </div>
+        <div class="soft-item"><div class="icon">🧩</div><h4>Problem Solving</h4><p>Analytical approach to bugs and IT incidents</p></div>
+        <div class="soft-item"><div class="icon">🤝</div><h4>Team Collaboration</h4><p>Cross-functional teamwork in fast-paced environments</p></div>
+        <div class="soft-item"><div class="icon">💬</div><h4>Communication</h4><p>Translating technical issues for non-technical users</p></div>
+        <div class="soft-item"><div class="icon">⏱️</div><h4>Time Management</h4><p>98% on-time performance maintained under pressure</p></div>
+        <div class="soft-item"><div class="icon">🔄</div><h4>Adaptability</h4><p>Quickly pivots across technical environments</p></div>
       </div>
     </div>
   </section>
 
   <hr class="divider" />
 
-  <!-- ===================== EXPERIENCE ===================== -->
+  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="container">
-      <div class="section-label">My Journey</div>
+      <div class="section-label" data-text="My Journey">My Journey</div>
       <div class="section-title reveal">Work Experience</div>
       <p class="section-sub reveal">Real-world impact across delivery operations and enterprise IT support.</p>
       <div class="timeline">
-
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-header">
@@ -273,13 +240,12 @@
           </div>
           <div class="timeline-body">
             <ul>
-              <li>Maintain <strong>98% on-time delivery accuracy</strong> utilizing digital routing and scanning systems, demonstrating precision and reliability under pressure.</li>
-              <li>Troubleshoot <strong>scanner connectivity and software issues in real time</strong>, applying IT problem-solving skills in a high-throughput environment.</li>
-              <li>Collaborate with cross-functional teams to improve workflow efficiency and accuracy of digital data reporting.</li>
+              <li>Maintain <strong>98% on-time delivery accuracy</strong> utilizing digital routing and scanning systems.</li>
+              <li>Troubleshoot <strong>scanner connectivity and software issues in real time</strong>, applying IT problem-solving skills.</li>
+              <li>Collaborate with cross-functional teams to improve workflow efficiency and digital data reporting.</li>
             </ul>
           </div>
         </div>
-
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-header">
@@ -291,77 +257,131 @@
           </div>
           <div class="timeline-body">
             <ul>
-              <li>Delivered <strong>Tier 1 & Tier 2 technical support</strong> for hardware, software, and network issues across multiple sites, resolving incidents efficiently.</li>
-              <li>Managed <strong>Microsoft 365 accounts, Active Directory permissions</strong>, group policies, password resets, and enterprise system deployments.</li>
-              <li>Administered Windows and macOS environments; diagnosed and resolved <strong>LAN and VPN connectivity issues</strong>.</li>
-              <li>Wrote <strong>Python automation scripts</strong> that reduced repetitive data entry tasks by 30%, directly increasing team productivity.</li>
-              <li>Produced comprehensive <strong>technical documentation and user training guides</strong> that measurably reduced the volume of repeat support tickets.</li>
+              <li>Delivered <strong>Tier 1 & Tier 2 technical support</strong> for hardware, software, and network issues across multiple sites.</li>
+              <li>Managed <strong>Microsoft 365 accounts, Active Directory permissions</strong>, group policies, and system deployments.</li>
+              <li>Administered Windows and macOS environments; resolved <strong>LAN and VPN connectivity issues</strong>.</li>
+              <li>Wrote <strong>Python automation scripts</strong> reducing manual data entry by 30%.</li>
+              <li>Produced <strong>technical documentation and user training guides</strong> that reduced repeat support tickets.</li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <hr class="divider" />
 
-  <!-- ===================== PROJECTS ===================== -->
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <div class="section-label">What I've Built</div>
+      <div class="section-label" data-text="What I've Built">What I've Built</div>
       <div class="section-title reveal">Projects</div>
-      <p class="section-sub reveal">Academic and personal projects showcasing full-stack development, mobile engineering, and database design.</p>
+      <p class="section-sub reveal">Full-stack development, mobile engineering, and database design — built to solve real problems.</p>
       <div class="projects-grid">
-
         <div class="project-card reveal">
           <div class="project-emoji">🍔</div>
           <h3>Food Delivery Mobile App</h3>
-          <p>A fully functional Android application with real-time GPS tracking, live order status updates, and a secure payments module. Designed to give users a seamless delivery experience from order to doorstep.</p>
+          <p>A fully functional Android application with real-time GPS tracking, live order status updates, and secure payments. Designed to give users a seamless delivery experience from order to doorstep.</p>
           <div class="project-tech">
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">Android SDK</span>
-            <span class="tech-tag">GPS APIs</span>
-            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Java</span><span class="tech-tag">Android SDK</span><span class="tech-tag">GPS APIs</span><span class="tech-tag">REST API</span>
           </div>
-          <div class="project-highlight">📈 20% improvement in order processing efficiency through backend optimization</div>
+          <div class="project-highlight">📈 20% improvement in order processing efficiency</div>
+          <div class="project-links">
+            <a href="https://github.com/astu-amin" target="_blank" class="project-link">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              View Code
+            </a>
+          </div>
         </div>
-
         <div class="project-card reveal">
           <div class="project-emoji">📦</div>
           <h3>Inventory Management System</h3>
-          <p>A full-stack web solution for real-time inventory tracking, automated report generation, and data analytics. Supports multiple user roles with secure authentication and visual dashboards for business insights.</p>
+          <p>A full-stack web solution for real-time inventory tracking, automated report generation, and data analytics. Supports multiple user roles with secure authentication and visual dashboards.</p>
           <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">SQL</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">Python</span><span class="tech-tag">SQL</span><span class="tech-tag">JavaScript</span><span class="tech-tag">HTML/CSS</span>
           </div>
           <div class="project-highlight">🔐 Role-based auth + data visualization dashboards</div>
+          <div class="project-links">
+            <a href="https://github.com/astu-amin" target="_blank" class="project-link">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              View Code
+            </a>
+          </div>
         </div>
-
         <div class="project-card reveal">
           <div class="project-emoji">🗄️</div>
           <h3>Business Database Management System</h3>
-          <p>Designed and implemented a normalized relational database for a mock business client as a capstone project at Georgian College. Focused on data integrity, complex query optimization, and business reporting.</p>
+          <p>A normalized relational database for a mock business client — capstone project at Georgian College. Focused on data integrity, complex query optimization, and business reporting.</p>
           <div class="project-tech">
-            <span class="tech-tag">SQL Server</span>
-            <span class="tech-tag">Database Design</span>
-            <span class="tech-tag">Normalization</span>
+            <span class="tech-tag">SQL Server</span><span class="tech-tag">Database Design</span><span class="tech-tag">Normalization</span>
           </div>
           <div class="project-highlight">✅ Queries, reports & views improving data access efficiency</div>
+          <div class="project-links">
+            <a href="https://github.com/astu-amin" target="_blank" class="project-link">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              View Code
+            </a>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <hr class="divider" />
 
-  <!-- ===================== EDUCATION ===================== -->
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label" data-text="Credentials">Credentials</div>
+      <div class="section-title reveal">Certifications</div>
+      <p class="section-sub reveal">Verified skills and ongoing professional development.</p>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-body">
+            <div class="cert-name">Computer Programming Diploma</div>
+            <div class="cert-issuer">Georgian College</div>
+            <div class="cert-date">2024</div>
+          </div>
+          <div class="cert-badge verified">Verified</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-body">
+            <div class="cert-name">Microsoft 365 Fundamentals</div>
+            <div class="cert-issuer">Microsoft</div>
+            <div class="cert-date">In Progress</div>
+          </div>
+          <div class="cert-badge progress">In Progress</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🐍</div>
+          <div class="cert-body">
+            <div class="cert-name">Python for Everybody</div>
+            <div class="cert-issuer">University of Michigan / Coursera</div>
+            <div class="cert-date">2023</div>
+          </div>
+          <div class="cert-badge verified">Verified</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🛡️</div>
+          <div class="cert-body">
+            <div class="cert-name">CompTIA A+ (Target)</div>
+            <div class="cert-issuer">CompTIA</div>
+            <div class="cert-date">Planned 2025</div>
+          </div>
+          <div class="cert-badge planned">Planned</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- EDUCATION -->
   <section id="education">
     <div class="container">
-      <div class="section-label">Academic Background</div>
+      <div class="section-label" data-text="Academic Background">Academic Background</div>
       <div class="section-title reveal">Education</div>
       <div class="edu-grid reveal">
         <div class="edu-card">
@@ -386,13 +406,45 @@
 
   <hr class="divider" />
 
-  <!-- ===================== CONTACT ===================== -->
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
       <div class="cta-box reveal">
-        <div class="section-label" style="text-align:center">Let's Work Together</div>
+        <div class="section-label" style="text-align:center" data-text="Let's Work Together">Let's Work Together</div>
         <div class="section-title" style="font-size:2.2rem">Ready to Add Value<br>to Your Team</div>
-        <p>I'm actively seeking roles in Full Stack Development, IT Support Engineering, or Programmer Analyst positions. I bring both the technical depth and the communication skills to hit the ground running.</p>
+        <p>I'm actively seeking roles in Full Stack Development, IT Support Engineering, or Programmer Analyst positions. Let's connect — I'd love to talk.</p>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="jane@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+
+        <div class="cta-divider"><span>or reach me directly</span></div>
+
         <div class="cta-contacts">
           <a href="mailto:astuamin04@gmail.com" class="cta-contact-item">
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
@@ -404,20 +456,37 @@
           </a>
           <a href="https://www.linkedin.com/in/astu-amin" class="cta-contact-item" target="_blank" rel="noopener">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn Profile
+            LinkedIn
+          </a>
+          <a href="https://github.com/astu-amin" class="cta-contact-item" target="_blank" rel="noopener">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer>
-    <p>Designed & built by <span>Astu Ankurkumar Amin</span> · Barrie, Ontario · 2025</p>
-    <p style="margin-top:6px;font-size:0.72rem;">Open to relocation & remote opportunities</p>
+    <div class="footer-inner">
+      <div class="footer-logo">AAA</div>
+      <p>Designed & built by <span>Astu Ankurkumar Amin</span> · Barrie, Ontario · 2025</p>
+      <p class="footer-sub">Open to relocation & remote opportunities</p>
+      <div class="footer-socials">
+        <a href="https://github.com/astu-amin" target="_blank" aria-label="GitHub">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/astu-amin" target="_blank" aria-label="LinkedIn">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:astuamin04@gmail.com" aria-label="Email">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
